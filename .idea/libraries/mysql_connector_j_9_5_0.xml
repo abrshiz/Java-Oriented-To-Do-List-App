@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-j-9.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TodoList/libs/mysql-connector-j_9.5.0-1debian13_all/usr/share/java/mysql-connector-j-9.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

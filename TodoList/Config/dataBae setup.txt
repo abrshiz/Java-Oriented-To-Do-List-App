@@ -1,0 +1,37 @@
+﻿=== DATABASE SETUP INSTRUCTIONS ===
+
+STEP 1: Install MySQL/MariaDB
+- Download from: https://dev.mysql.com/downloads/installer/
+- OR use MariaDB: https://mariadb.org/download/
+
+STEP 2: Import the database:
+Method A: Using phpMyAdmin
+1. Open phpMyAdmin
+2. Create new database named "todolist"
+3. Go to Import tab
+4. Select file: database/todolist_dump.sql
+5. Click Go
+
+Method B: Using Command Line
+1. Open terminal/command prompt
+2. Run: mysql -u root -p < database/todolist_dump.sql
+3. Enter password when prompted
+
+Method C: Using MySQL Workbench
+1. Open MySQL Workbench
+2. Connect to server
+3. File → Run SQL Script
+4. Select database/todolist_dump.sql
+5. Click Run
+
+STEP 3: Verify the database
+1. Check if database "todolist" exists
+2. Check if table "tasks" has data
+3. Verify with: SELECT * FROM tasks;
+
+STEP 4: Update credentials (if needed)
+Edit DatabaseConnection.java with your:
+- Username (default: root)
+- Password
+- Port (default: 3306)
+- Hostname (default: localhost)
