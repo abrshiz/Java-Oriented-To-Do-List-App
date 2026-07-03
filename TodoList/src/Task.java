@@ -9,8 +9,6 @@ public class Task {
     private boolean notified;
     private Date createdAt;
     private Date snoozedUntil; // Added field for snooze tracking
-
-    // Constructors
     public Task() {}
 
     public Task(String text, String category, Date deadline) {
