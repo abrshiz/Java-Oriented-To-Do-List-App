@@ -19,8 +19,6 @@ public class TaskDAO {
                     snoozed_until DATETIME NULL
                 )
                 """);
-
-            // Safety check for existing databases missing the snooze column
             try { stmt.execute("ALTER TABLE tasks ADD COLUMN snoozed_until DATETIME NULL"); }
             catch (SQLException e) { /* Column already exists */ }
         }
